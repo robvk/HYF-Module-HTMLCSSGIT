@@ -1,0 +1,211 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #D5D8DC;
+}
+
+#container {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+}
+
+
+/* left column style */
+
+#column-left {
+    width: 35%;
+    height: 100%;
+    background-color: #3cb9c6;
+    border-radius: 25% 10%;
+}
+
+
+/* right column style */
+
+#column-right {
+    width: 65%;
+    right: 100%;
+    background-color: #FBFCFC;
+    border-radius: 113px 68px / 296px;
+    padding: 50px 100px;
+    font-family: sans-serif;
+}
+
+
+/* p tags with experience classes */
+
+.experience {
+    padding: 30px 0;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.514);
+    font-size: 18px;
+}
+
+
+/* p tags with text classes */
+
+.text {
+    padding: 20px 0;
+}
+
+
+/* img div */
+
+#img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    font-family: sans-serif;
+}
+
+
+/* img */
+
+img {
+    width: 139px;
+    border-radius: 50% 20% / 10% 40%;
+}
+
+
+/* all hr style */
+
+hr {
+    margin: 0 60px;
+}
+
+h1 {
+    margin: 20px 0;
+}
+
+
+/* p tags with info class */
+
+.info {
+    margin: 20px 0 20px 60px;
+    font-weight: bold;
+}
+
+#column-left .fa {
+    color: rgb(172, 50, 34);
+    margin-right: 20px;
+}
+
+#column-right .fa {
+    color: rgb(172, 50, 34);
+    margin-right: 20px;
+}
+
+
+/* p tags with date style in right column  */
+
+.date {
+    color: rgb(172, 50, 34);
+    font-size: 18px;
+}
+
+
+/* start skills div in left column */
+
+.skills-div {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/* div with lang classes in the skills div in left column */
+
+.lang {
+    margin: 5px;
+    border-radius: 50%;
+    display: flex;
+    align-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: #fff;
+    margin-top: 50px;
+}
+
+.two {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(146, 211, 85);
+}
+
+.content {
+    margin: 20px 0 20px 60px;
+    color: rgba(0, 0, 0, 0.664);
+}
+
+.first {
+    width: 80px;
+    height: 80px;
+    background-color: rgb(34, 78, 95);
+}
+
+.thoth {
+    width: 90px;
+    height: 90px;
+    margin: -11px 0 0 72px;
+    background-color: rgb(122, 69, 89);
+}
+
+.forth {
+    width: 70px;
+    height: 70px;
+    margin: 30px 0 10px 41px;
+    background-color: rgb(51, 48, 49);
+}
+
+
+/* end skills div in left column  */
+
+
+/* Languages ul in left column  */
+
+ul {
+    margin: 20px 0 20px 80px;
+    font-size: 18px;
+    list-style-type: square;
+}
+
+
+/* Responsive  */
+
+@media screen and (max-width: 1185px) {
+    .lang {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #container {
+        width: 100%;
+        display: inline-block;
+        margin: 0 auto;
+        /* display: grid; */
+    }
+    #column-right {
+        width: 100%;
+        border-radius: 0;
+        padding: 10px;
+    }
+    #column-left {
+        width: 100%;
+        border-radius: 0;
+        padding: 10px;
+    }
+    .skills-div {
+        padding: 5px 0;
+    }
+    .lang {
+        margin: 0;
+    }
+}
